@@ -7,6 +7,8 @@ import Dashboard from './pages/Dashboard';
 import InputProduct from './pages/InputProduct';
 import RefillStock from './pages/RefillStock';
 import PrintSheets from './pages/PrintSheets';
+import BoxManagement from './pages/BoxManagement';
+import ActivityLogs from './pages/ActivityLogs';
 import { useAuthStore } from './store/authStore';
 import NotFound from './pages/NotFound';
 
@@ -49,9 +51,9 @@ function App() {
             <Route path="input-product" element={<InputProduct />} />
             <Route path="refill" element={<RefillStock />} />
             <Route path="print-sheets" element={<PrintSheets />} />
-            <Route path="box-management" element={<div className="p-6">Box Management Page (Coming Soon)</div>} />
+            <Route path="box-management" element={<BoxManagement />} />
             <Route path="analytics" element={<div className="p-6">Analytics Page (Coming Soon)</div>} />
-            <Route path="activity-logs" element={<div className="p-6">Activity Logs Page (Coming Soon)</div>} />
+            <Route path="activity-logs" element={<ActivityLogs />} />
             <Route path="upload-csv" element={<div className="p-6">Upload CSV Page (Coming Soon)</div>} />
             <Route path="settings" element={<div className="p-6">Settings Page (Coming Soon)</div>} />
           </Route>
@@ -62,5 +64,3 @@ function App() {
     </>
   );
 }
-
-export default App
